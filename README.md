@@ -1,5 +1,15 @@
 # How we trained a custom traffic signs detection model with Tensorflow Object Detection API
 
+## Made by [@PeregHer](https://github.com/PeregHer), [@ChainYo](https://github.com/ChainYo), [@PaulSabia](https://github.com/PaulSabia)
+
+To understand how to use Tensorflow API, we used this [article](https://gilberttanner.com/blog/tensorflow-object-detection-with-tensorflow-2-creating-a-custom-model) and [video](https://www.youtube.com/watch?v=cvyDYdI2nEI).
+
+This readme is inspired by the following [github repo](https://github.com/TannerGilbert/Tensorflow-Object-Detection-API-Train-Model).
+
+![](Output_images_test/test_00071.png)
+
+![](Output_images_test/test_00091.png)
+
 ### 1. Installation
 
 You can install the TensorFlow Object Detection API either with [Docker](https://www.docker.com/), an open-source platform for deploying and managing containerized applications. The installation could be longer but in the end it will be worth it to install it with Docker.
@@ -208,3 +218,9 @@ python /content/models/research/object_detection/exporter_main_v2.py \
 ```
 
 You can use the inference graph in differents ways.
+
+### 8. Traffic sign classification
+
+Now we have a good traffic sign detection model. We use another CNN model in order to classify the differents traffic signs. You can find the classification model [here](model_classifier.ipynb).
+
+Because we have 2 models used to detect and classify each traffic signs, we had to create a script to make them work together. You can find this [here](processing_notebook.ipynb).
