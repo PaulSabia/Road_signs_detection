@@ -1,0 +1,15 @@
+tensorflow-object-detection-api
+pandas
+matplotlib
+sklearn
+io
+os
+numpy
+glob
+IPython
+six
+Pillow
+tensorflow
+cmake
+opencv-python
+opencv-contrib-python
